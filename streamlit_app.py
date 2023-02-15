@@ -24,6 +24,6 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon"
 
 
 #Takes the json response and normalizes it
-fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
 #print the output on the screen
 streamlit.dataframe(fruityvice_normalized)
